@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Recipe || Final</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="Images/easy-recipes-high-resolution-logo-removebg-preview.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> Home </a>
+          <a href="about.html" class="nav-link"> About </a>
+          <a href="tags.html" class="nav-link"> Tags </a>
+          <a href="recipes.html" class="nav-link"> Recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> Contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero">
+          <img
+            src="Images/tomato-soup.jpg"
+            class="img recipe-hero-img"
+          />
+          <article class="recipe-info">
+            <h2>Tomato Soup</h2>
+            <p>
+                Tomato soup is a comforting and classic dish made from ripe, juicy tomatoes blended into a smooth, 
+                flavorful broth. It’s rich, creamy, and packed with a perfect balance of sweetness and tanginess.
+                 Whether enjoyed as a light appetizer or a hearty meal with grilled cheese, this soup is a timeless favorite. 
+                 Made with simple ingredients like tomatoes, garlic, onions, and herbs, it’s easy to prepare and can be customized with cream, spices, or croutons.
+                  Warm, nourishing, and delicious, a bowl of tomato soup is the ultimate comfort food! 
+            </p>
+            <div class="recipe-icons">
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>Prep time</h5>
+                <p>10 min.</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>Cook time</h5>
+                <p>30 min.</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>Serving</h5>
+                <p>4 servings</p>
+              </article>
+            </div>
+            <p class="recipe-tags">
+              Tags : <a href="tag-template.html">Tomato</a>
+              <a href="tag-template.html">Soup</a>
+              <a href="tag-template.html">Food</a>
+            </p>
+          </article>
+        </section>
+        <!-- content -->
+        <section class="recipe-content">
+          <article>
+            <h4>INSTRUCTIONS</h4>
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>Step 1</p>
+                <div></div>
+              </header>
+              <p>
+                To a hot pan add your chopped onions and sweat them out. Once done add your tomatoes
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>Step 2</p>
+                <div></div>
+              </header>
+              <p>
+                Cook your tomatoes until they form a thick paste. Once ready, pour into a blender and blend til smooth
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>Step 3</p>
+                <div></div>
+              </header>
+              <p>
+                Add the blended mixture back to your pot and continue to cook it. Add salt to taste, and some other spices to enhance the flavour like garlic powder and oregano
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <div class="single-instruction">
+                <header>
+                  <p>Step 4</p>
+                  <div></div>
+                </header>
+                <p>
+                    Add your plain yoghurt or milk to the soup and cook for another 2-3 minutes. Serve while hot
+                </p>
+              </div>
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>ingredients</h4>
+              <p class="single-ingredient">3 tomatoes</p>
+              <p class="single-ingredient">1/2 cup plain yoghurt or milk</p>
+              <p class="single-ingredient">1 onion</p>
+              <p class="single-ingredient">Salt</p>
+
+            </div>
+            <div>
+              <h4>tools</h4>
+              <p class="single-tool">Hand Blender</p>
+              <p class="single-tool">Small Pot With Lid</p>
+              <p class="single-tool">Measuring Spoons</p>
+              <p class="single-tool">Measuring Cups</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Easy Recipes</span>
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

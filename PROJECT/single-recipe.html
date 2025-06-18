@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Recipe || Final</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="Images/easy-recipes-high-resolution-logo-removebg-preview.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> Home </a>
+          <a href="about.html" class="nav-link"> About </a>
+          <a href="tags.html" class="nav-link"> Tags </a>
+          <a href="recipes.html" class="nav-link"> Recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> Contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero">
+          <img
+            src="Images/Naan-bread.webp"
+            class="img recipe-hero-img"
+          />
+          <article class="recipe-info">
+            <h2>Naan Bread</h2>
+            <p>
+                You naan’t believe how delicious this bread is! Naan is a soft, pillowy flatbread that originated in Southern and Central Asia,
+                 with deep roots in Indian cuisine. It’s a yeast-leavened bread traditionally cooked in a tandoor—a blazing-hot clay oven—where small pieces of dough are stretched by hand and slapped onto the oven’s walls to cook.
+                The result? A beautifully charred, slightly chewy bread that’s perfect for scooping up curries, dips, or even enjoying on its own.
+            </p>
+            <div class="recipe-icons">
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>Prep time</h5>
+                <p>60 min.</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>Cook time</h5>
+                <p>15 min.</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>serving</h5>
+                <p>8 servings</p>
+              </article>
+            </div>
+            <p class="recipe-tags">
+              Tags : <a href="tag-template.html">Bread</a>
+              <a href="tag-template.html">Naan</a>
+              <a href="tag-template.html">food</a>
+            </p>
+          </article>
+        </section>
+        <!-- content -->
+        <section class="recipe-content">
+          <article>
+            <h4>INSTRUCTIONS</h4>
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>Step 1</p>
+                <div></div>
+              </header>
+              <p>
+                Prepare the dough, mixing the dry ingredients first then adding the wet ingredients. Knead for 15 minutes then let it rest for 1-2 hours
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>Step 2</p>
+                <div></div>
+              </header>
+              <p>
+               Once risen, shape the naan by rolling it out into 6-8 equal balls. Roll each one out into an oval shape 1/4 inch thick 
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>Step 3</p>
+                <div></div>
+              </header>
+              <p>
+                Mix some butter with 2 cloves of garlic to be used to brush on the Naan
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <div class="single-instruction">
+                <header>
+                  <p>Step 4</p>
+                  <div></div>
+                </header>
+                <p>
+                  Cook the Naan on a hot skillet for 1-2 minutes until bubbles start to form, then flip and cook the other side til golden brown
+                </p>
+              </div>
+              <div class="single-instruction">
+                <header>
+                  <p>Step 5</p>
+                  <div></div>
+                </header>
+                <p>
+                  Brush the Naan with the garlic butter and serve with a side of your choice
+                </p>
+              </div>
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>ingredients</h4>
+              <p class="single-ingredient">2 cups all purpose flour</p>
+              <p class="single-ingredient">1/2 teaspoon salt</p>
+              <p class="single-ingredient">1 teaspoon sugar and active dry yeast</p>
+              <p class="single-ingredient">1/4 cup plain yoghurt</p>
+              <p class="single-ingredient">1/2 cup warm water </p>
+              <p class="single-ingredient">garlic and butter</p>
+            </div>
+            <div>
+              <h4>tools</h4>
+              <p class="single-tool">Stainless steel mixing bowl</p>
+              <p class="single-tool">Measuring Spoons</p>
+              <p class="single-tool">Measuring Cups</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Easy Recipes</span>
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

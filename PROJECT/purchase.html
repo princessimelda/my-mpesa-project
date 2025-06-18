@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchase Recipes</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="Images/easy-recipes-high-resolution-logo-removebg-preview.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> Home </a>
+          <a href="about.html" class="nav-link"> About </a>
+          <a href="tags.html" class="nav-link"> Tags </a>
+          <a href="recipes.html" class="nav-link"> Recipes </a>
+          <a href="purchase.html" class="nav-link"> Purchase </a>
+          <a href="cart.html" class="nav-link"> Cart </a>
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> Contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+
+    <!-- main -->
+    <main class="page">
+      <header class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>Purchase Your Favorite Recipes</h1>
+            <h4>Delicious meals just a click away!</h4>
+          </div>
+        </div>
+      </header>
+
+      <section class="recipes-contain">
+        <div class="recipes-lists">
+          <!-- Recipe Item -->
+          <div class="recipee">
+            <img src="Images/meal1.jpg" class="img recipee-img" alt="Recipe 1" />
+            <h5>Recipe 1</h5>
+            <p>Prep: 10min | Cook: 20min</p>
+            <h6>KSH 50.00</h6>
+            <button class="add-to-cart" onclick="addToCart('Recipe 1')">Add to Cart</button>
+          </div>
+          <!-- Recipe Item -->
+          <div class="recipee">
+            <img src="Images/meal3.jpg" class="img recipee-img" alt="Recipe 2" />
+            <h5>Recipe 2</h5>
+            <p>Prep: 15min | Cook: 25min</p>
+            <h6>KSH 30.00</h6>
+            <button class="add-to-cart" onclick="addToCart('Recipe 2')">Add to Cart</button>
+          </div>
+          <!-- Recipe Item -->
+          <div class="recipee">
+            <img src="Images/meal2.jpg" class="img recipee-img" alt="Recipe 3" />
+            <h5>Recipe 3</h5>
+            <p>Prep: 20min | Cook: 30min</p>
+            <h6>KSH 35.00</h6>
+            <button class="add-to-cart" onclick="addToCart('Recipe 3')">Add to Cart</button>
+          </div>
+          <!-- Recipe Item -->
+          <div class="recipee">
+            <img src="Images/meal4.webp" class="img recipee-img" alt="Recipe 4" />
+            <h5>Recipe 4</h5>
+            <p>Prep: 5min | Cook: 15min</p>
+            <h6>KSH 41.00</h6>
+            <button class="add-to-cart" onclick="addToCart('Recipe 4')">Add to Cart</button>
+          </div>
+          <!-- Recipe Item -->
+          <div class="recipee">
+            <img src="Images/meal5.jpg" class="img recipee-img" alt="Recipe 5" />
+            <h5>Recipe 5</h5>
+            <p>Prep: 10min | Cook: 20min</p>
+            <h6>KSH 15.00</h6>
+            <button class="add-to-cart" onclick="addToCart('Recipe 5')">Add to Cart</button>
+          </div>
+          <!-- Recipe Item -->
+          <div class="recipee">
+            <img src="Images/meal6.jpg" class="img recipee-img" alt="Recipe 6" />
+            <h5>Recipe 6</h5>
+            <p>Prep: 15min | Cook: 25min</p>
+            <h6>KSH 7.00</h6>
+            <button class="add-to-cart" onclick="addToCart('Recipe 6')">Add to Cart</button>
+          </div>
+          <!-- Recipe Item -->
+          <div class="recipee">
+            <img src="Images/meal7.jpg" class="img recipee-img" alt="Recipe 7" />
+            <h5>Recipe 7</h5>
+            <p>Prep: 20min | Cook: 30min</p>
+            <h6>KSH 70.00</h6>
+            <button class="add-to-cart" onclick="addToCart('Recipe 7')">Add to Cart</button>
+          </div>
+          <!-- Recipe Item -->
+          <div class="recipee">
+            <img src="Images/meal8.avif" class="img recipee-img" alt="Recipe 8" />
+            <h5>Recipe 8</h5>
+            <p>Prep: 5min | Cook: 15min</p>
+            <h6>KSH 9.00</h6>
+            <button class="add-to-cart" onclick="addToCart('Recipe 8')">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- end of main -->
+
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Easy Recipes</span>
+      </p>
+    </footer>
+
+    <script src="./js/app.js"></script>
+    <script>
+      function addToCart(recipe) {
+        alert(recipe + " has been added to your cart!");
+        // Here you can implement the logic to add the recipe to the cart
+      }
+    </script>
+  </body>
+</html>
+
+    

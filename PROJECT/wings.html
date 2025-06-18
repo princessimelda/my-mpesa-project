@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Recipe || Final</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="Images/easy-recipes-high-resolution-logo-removebg-preview.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> Home </a>
+          <a href="about.html" class="nav-link"> About </a>
+          <a href="tags.html" class="nav-link"> Tags </a>
+          <a href="recipes.html" class="nav-link"> Recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> Contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero">
+          <img
+            src="Images/wings.jpg"
+            class="img recipe-hero-img"
+          />
+          <article class="recipe-info">
+            <h2>Chicken Wings</h2>
+            <p>
+              You know what they say about black people and chicken!
+              Wings are a beloved meal all across the board forming a huge percentage of menus in several restaurants especially fast food 
+              spots. This is a recipe made with one of our partners, Adisia Spices, who make a range of delicious marinades and spices. Our marinade
+              of choice in this particular recipe, is the spicy cajun marinade and spice. Try it cause you'll love it. 
+            </p>
+            <div class="recipe-icons">
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>Prep time</h5>
+                <p>Overnight</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>Cook time</h5>
+                <p>45 min.</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>Serving</h5>
+                <p>3 servings</p>
+              </article>
+            </div>
+            <p class="recipe-tags">
+              Tags : <a href="tag-template.html">Chicken</a>
+              <a href="tag-template.html">Food</a>
+            </p>
+          </article>
+        </section>
+        <!-- content -->
+        <section class="recipe-content">
+          <article>
+            <h4>INSTRUCTIONS</h4>
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>Step 1</p>
+                <div></div>
+              </header>
+              <p>
+               Marinade your wings in the spicy cajun marinade overnight. If unable to amrinade overnight, 3 hours will do to ensure the flavours penetrate
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>Step 2</p>
+                <div></div>
+              </header>
+              <p>
+                Pre-heat your oven at 200 degrees celsius for 10 minutes before placing your chicken in
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>Step 3</p>
+                <div></div>
+              </header>
+              <p>
+                Place your chicken on a rack and let them cook for the next 45 minutes. Once ready, coat them in some cajun spice to add an extra layer of flavour
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <div class="single-instruction">
+                <header>
+                  <p>Step 4</p>
+                  <div></div>
+                </header>
+                <p>
+                    Serve the wings while hot preferably with a side of roast potatoes and a dipping sauce of your choice
+                </p>
+              </div>
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>Ingredients</h4>
+              <p class="single-ingredient">8 chicken wings</p>
+              <p class="single-ingredient">Spicy Cajun marinade</p>
+              <p class="single-ingredient">Spicy Cajun spice</p>
+            </div>
+        
+          </article>
+        </section>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Easy Recipes</span> 
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

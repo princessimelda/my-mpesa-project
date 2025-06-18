@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-center">
+            <div class="nav-header">
+                <a href="index.html" class="nav-logo">
+                    <img src="Images/easy-recipes-high-resolution-logo-removebg-preview.png" alt="simply recipes" />
+                </a>
+                <button class="nav-btn btn">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link"> Home </a>
+                <a href="about.html" class="nav-link"> About </a>
+                <a href="tags.html" class="nav-link"> Tags </a>
+                <a href="recipes.html" class="nav-link"> Recipes </a>
+                <a href="purchase.html" class="nav-link"> Purchase </a>
+                <a href="cart.html" class="nav-link"> Cart </a>
+                <div class="nav-link contact-link">
+                    <a href="contact.html" class="btn"> Contact </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page">
+        <header class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Your Cart</h1>
+                    <h4>Review your items and proceed to checkout</h4>
+                </div>
+            </div>
+        </header>
+
+        <section class="cart-container">
+            <div class="cart-items" id="cart-items">
+                <h2>Items in Your Cart</h2>
+            </div>
+
+            <div class="checkout-section">
+                <h2>Checkout</h2>
+                <form id="checkout-form">
+                    <div class="form-row">
+                        <label for="phone-number" class="form-label">Enter your phone number:</label>
+                        <input type="tel" id="phone-number" class="form-input" placeholder="e.g. +254712345678" required />
+                    </div>
+                    <button type="button" class="btn" onclick="processPayment()">Checkout</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>
+            &copy; <span id="date"></span>
+            <span class="footer-logo">Easy Recipes</span>
+        </p>
+    </footer>
+
+   <!--  <script src="app.js"></script>--> 
+    <script>
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+        function populateCart() {
+            const cartContainer = document.getElementById('cart-items');
+            cartContainer.innerHTML = '';
+
+            if (cartItems.length === 0) {
+                cartContainer.innerHTML = '<p>Your cart is empty.</p>';
+                return;
+            }
+
+            cartItems.forEach(item => {
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item';
+                cartItem.innerHTML = `
+                    <img src="${item.image}" class="img cart-item-img" alt="${item.name}" />
+                    <div class="cart-item-details">
+                        <h5>${item.name}</h5>
+                        <p>Price: KSH ${item.price.toFixed(2)}</p>
+                        <button class="remove-item" onclick="removeItem(${item.id})">Remove</button>
+                    </div>
+                `;
+                cartContainer.appendChild(cartItem);
+            });
+        }
+
+        function removeItem(itemId) {
+            const updatedCart = cartItems.filter(item => item.id !== itemId);
+            localStorage.setItem('cartItems', JSON.stringify(updatedCart));
+            populateCart();
+        }
+
+        function processPayment() {
+            const phoneNumber = document.getElementById('phone-number').value;
+
+            if (phoneNumber) {
+                const totalAmount = cartItems.reduce((total, item) => total + item.price, 0);
+                const paymentData = {
+                    recipe_id: cartItems.map(item => item.id),
+                    phone_number: phoneNumber,
+                    quantity: cartItems.length
+                };
+
+                fetch('mpesa.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(paymentData)
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.error) {
+                        alert("Error: " + data.message);
+                    } else {
+                        alert("Payment initiated successfully! " + data.message);
+                        clearCart();
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert("An error occurred while processing the payment: " + error.message);
+                });
+
+            } else {
+                alert("Please enter a valid phone number.");
+            }
+        }
+
+        function clearCart() {
+            localStorage.removeItem('cartItems');
+            populateCart();
+        }
+
+        window.onload = populateCart;
+    </script>
+</body>
+</html>

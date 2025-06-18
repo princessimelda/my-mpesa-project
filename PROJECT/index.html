@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Recipes</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="Images/easy-recipes-high-resolution-logo-removebg-preview.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> Home </a>
+          <a href="about.html" class="nav-link"> About </a>
+          <a href="tags.html" class="nav-link"> Tags </a>
+          <a href="recipes.html" class="nav-link"> Recipes </a>
+          <a href="purchase.html" class="nav-link">Purchase</a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <!-- main -->
+    <main class="page">
+      <!-- header -->
+      <header class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>Simple Recipes</h1>
+            <h4>No Fluff, Just Food !</h4>
+          </div>
+        </div>
+      </header>
+      <!-- end of header -->
+      <section class="recipes-container">
+        <!-- tag container -->
+        <div class="tags-container">
+          <h4>Recipes</h4>
+          <div class="tags-list">
+            <a href="tag-template.html">Chicken(1)</a>
+            <a href="tag-template.html">Corn (2)</a>
+            <a href="tag-template.html">Bread(1)</a>
+            <a href="tag-template.html">Food (5)</a>
+          </div>
+        </div>
+        <!-- end of tag container -->
+        <!-- recipes list -->
+        <div class="recipes-list">
+          <!-- single recipe -->
+          <a href="rice.html" class="recipe">
+            <img
+              src="Images/veggie-rice.webp"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Vegetable Rice</h5>
+            <p>Prep : 10min | Cook : 15min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="wings.html" class="recipe">
+            <img
+              src="Images/wings.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Chicken Wings</h5>
+            <p>Prep : Overnight | Cook : 45min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="tomato-soup.html" class="recipe">
+            <img
+              src="Images/tomato-soup.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Tomato Soup</h5>
+            <p>Prep : 10min | Cook : 15min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="githeri.html" class="recipe">
+            <img
+              src="Images/githeri.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Succotash AKA Githeri</h5>
+            <p>Prep : 90min | Cook : 60min</p>
+          </a>
+          <!-- end of single recipe -->
+           <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="Images/Naan-bread.webp"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Naan Bread</h5>
+            <p>Prep : 60min | Cook : 15min</p>
+          </a>
+          <!-- end of single recipe -->
+
+        </div>
+        <!-- end of recipes list -->
+      </section>
+    </main>
+    <!-- end of main -->
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Easy Recipes</span>
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Template</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="Images/easy-recipes-high-resolution-logo-removebg-preview.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> Home </a>
+          <a href="about.html" class="nav-link"> About </a>
+          <a href="tags.html" class="nav-link"> Tags </a>
+          <a href="recipes.html" class="nav-link"> Recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> Contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="featured-recipes">
+        <h4>Food</h4>
+          <!-- recipes list -->
+        <div class="recipes-list">
+          <!-- single recipe -->
+          <a href="wings.html" class="recipe">
+            <img
+              src="Images/wings.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Chicken Wings</h5>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="rice.html" class="recipe">
+            <img
+              src="Images/veggie-rice.webp"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Rice</h5>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="tomato-soup.html" class="recipe">
+            <img
+              src="Images/tomato-soup.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+           <h5>Soup</h5>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="Images/Naan-bread.webp"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Naan Bread</h5>
+          </a>
+          <!-- end of single recipe -->
+          <a href="githeri.html" class="recipe">
+            <img
+              src="Images/githeri.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Githeri</h5>
+          </a>
+        </div>
+        <!-- end of recipe list -->
+      </div>
+          
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Easy Recipes</span> 
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

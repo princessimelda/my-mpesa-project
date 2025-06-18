@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="Images/easy-recipes-high-resolution-logo-removebg-preview.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> Home </a>
+          <a href="about.html" class="nav-link"> About </a>
+          <a href="tags.html" class="nav-link"> Tags </a>
+          <a href="recipes.html" class="nav-link"> Recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> Contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+     <section class="contact-container">
+          <article class="contact-info">
+            <h3>Want To Get In Touch?</h3>
+            <p>
+              Any inquiries you have can be sent directly to us by sending us the inquiry
+              through the form provided. 
+            </p>
+            <p>We are also always on the look out for any new recipes that may conttribute to the purpose of
+              our website so feel free to submit any suggestions you have.
+            </p>
+            <p>
+              To get in touch with some of our nutritionists on board for anyone in need, definetely reach out 
+              and we shall provide you with our directory and you will be able to select one that is best suited
+              to you. 
+            </p>
+          </article>
+          <article>
+            <form class="form contact-form">
+              <div class="form-row">
+                <label html="name" class="form-label">Name</label>
+                <input type="text" name="name" id="name" class="form-input" />
+              </div>
+              <div class="form-row">
+                <label html="email" class="form-label">Email</label>
+                <input type="text" name="email" id="email" class="form-input" />
+              </div>
+              <div class="form-row">
+                <label html="message" class="form-label">Message</label>
+                <textarea name="message" id="message" class="form-textarea"></textarea>
+              </div>
+              <button type="submit" class="btn btn-block">
+                Submit
+              </button>
+            </form>
+          </article>
+        </section>
+     <!-- featured recipes -->
+       <section class="featured-recipes">
+        <h5 class="featured-title">Health is Wealth!</h5>
+        <div class="recipes-list">
+          <!-- single recipe -->
+            <img
+              src="Images/contact.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+            <img
+              src="Images/contact3.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+            <img
+              src="Images/contact2.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+
+
+          </a>
+          <!-- end of single recipe -->
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Easy Recipes</span>
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
